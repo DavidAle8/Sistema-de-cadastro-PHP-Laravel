@@ -1,0 +1,143 @@
+HTML:
+
+
+    <div class="container_register">
+
+        <h1 class="usu_cadastrados">Usuários cadastrados</h1> 
+
+        @foreach ($usuarios_cadastrados as $usuarios_cadastrados)
+        
+            <div class="view_register">
+
+                <div class="user-data"> 
+
+                    <div class="nome">
+                        <p class="text_regist">Nome: {{ $usuarios_cadastrados->Nome}}</p>
+                    </div>
+
+                    <div class="cpf">
+                        <p class="text_regist">CPF: {{ $usuarios_cadastrados->cpf}}</p>
+                    </div>
+
+                    <div class="data_nasci">
+                        <p class="text_regist">Data de Nascimento: {{ $usuarios_cadastrados->data_nascimento}}</p>
+                    </div>
+
+                    <div class="email">
+                        <p class="text_regist">Email: {{ $usuarios_cadastrados->Email}}</p>
+                    </div>
+    
+                </div>
+
+                <div class="imagem"> 
+                    <img src="/IMG/WhatsApp Image 2024-06-06 at 13.04.59.jpeg" alt="Imagem do usuário" width="250px" height="200px">
+                </div>
+
+            </div>    
+
+            <div class="div_hr">
+                <hr>
+            </div>
+            
+        @endforeach
+
+    </div>
+
+HTML
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS:
+
+    .div_hr{
+        background-color: #20064B;
+        margin: 1px;
+        
+    }
+
+    .container_register {
+
+        height: auto;
+        width: 950px;  /* Aumenta a largura do contêiner para acomodar mais conteúdo */
+        max-width: 90%;  /* Garante que o contêiner seja responsivo */
+        margin: 50px auto;  /* Centraliza e adiciona espaçamento vertical */
+        border-radius: 20px;
+        border: 5px dashed;
+        padding: 50px;  /* Mantém um padding consistente */
+        background-color: #f0f0f0;  /* Adiciona uma cor de fundo para destaque */
+        padding-top: 70px;
+        margin-bottom: 40px
+    }
+
+    .view_register{
+
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin-bottom: 1px;
+        border: 3px solid #ccc;
+        text-align: left;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;  /* Adiciona flexbox para organizar o layout */
+        justify-content: space-between;  /* Espaça os itens */
+        align-items: center;  /* Alinha os itens ao centro */
+    }
+
+    .usu_cadastrados{
+
+        font-family: 'Bebas Neue', sans-serif;
+        margin: auto;
+        margin-bottom: 80px;
+        text-align: center;
+        padding: 10px;
+        color: black;
+        text-transform: uppercase;
+        text-shadow: 
+        1px 1px 0 #fff, 
+        2px 2px 0 #eee,
+        3px 3px 0 #ddd,
+        4px 4px 0 #ccc,
+        5px 5px 0 #bbb,
+        6px 6px 0 #aaa,
+        7px 7px 0 #999,
+        8px 8px 0 #888,
+        9px 9px 0 #777,
+        10px 10px 0 #666;
+    }
+
+    .user-data {
+        flex: 1;
+        margin-left: auto
+    }
+
+    .nome,.cpf,.data_nasci,.email{
+
+        font-weight: bold;
+    }
+
+    .imagem{
+        margin-left: 550px;
+        margin:0;
+    }
+
+
+    .text_regist{
+        margin: 20px;
+    }
+
+CSS
+
+
+
+
+    

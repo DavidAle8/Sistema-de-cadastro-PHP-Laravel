@@ -1,0 +1,251 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+}
+
+body{
+
+    background-image: url('/IMG/WhatsApp Image 2024-06-06 at 13.04.21.jpeg');
+    background-size: auto; /*Deixa a imagem no seu tamanho original*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*Mantem a imagem parada enquanto vc rola o site */
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-link{
+
+    display: inline-block;
+    padding: 0px; /* Remove padding */
+    margin: 0;  /* Remove margin */
+    width: auto; /* Ajusta a largura ao conteúdo */
+    height: auto; /* Ajusta a altura ao conteúdo */
+    padding-top: 35px;
+}
+
+.logo {
+    
+    display: block; /* Remove espaços acima e abaixo da imagem */
+    width: 207px; /* Define a largura desejada */
+    height: 49.213px; /* Define a altura desejada */ /* Ajusta a altura conforme a largura */
+    max-width: none; /* Remove qualquer limite de largura */
+}
+
+.botoes{
+    
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 200px; /* Espaçamento superior opcional */
+}
+
+#visualizar,#cadastrar{
+
+    border: 3px solid;
+    border-color: #20064B;
+    border-radius: 50px;
+    border-bottom: 7px solid #20064B;
+    padding: 10px 20px;
+    margin-right: 50px;
+    transition: 0.5s;
+    margin: 0;
+
+}
+
+#visualizar:hover, #cadastrar:hover, .cadastro:hover{
+
+    transform: scale(1.1);  
+    color:#A61EA6;
+}
+
+#texto{ 
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+.footer{
+
+    color: white;
+    text-align: center;
+    margin-top: 200px;  
+    background-color: black;
+    height: 120px;
+    max-width: 100%;
+    top: 0;
+    padding-top: 30px;
+    bottom: 0; /* Encosta o footer na parte inferior */
+    left: 0; /* Garante que o footer se estenda a partir da borda esquerda */
+    padding-top: 50px;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 
+    1px 1px 0 #fff, 
+    2px 2px 0 #eee,
+    3px 3px 0 #ddd,
+    4px 4px 0 #ccc,
+    5px 5px 0 #bbb,
+    6px 6px 0 #aaa,
+    7px 7px 0 #999,
+    8px 8px 0 #888,
+    9px 9px 0 #777,
+    10px 10px 0 #666;
+}
+
+
+/*Parte do cadastro*/
+
+.form-container {
+    display: flex; /*display: flex; - Torna a div um contêiner flexível.*/
+    flex-direction: column; /*flex-direction: column; - Organiza os filhos em uma coluna.*/
+    align-items: center; /* align-items: center; - Centraliza os filhos horizontalmente.*/
+    justify-content: center; /*justify-content: center; - Centraliza os filhos verticalmente.*/
+    min-height: 10vh; /*min-height: 100vh; - Garante que o contêiner ocupe pelo menos a altura total da viewport.*/
+    padding-top: 35px;
+}
+
+.formulario {
+    border: 1px solid;
+    border-color: white;
+    border-radius: 28px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);/* Esse '0.8' é o que ta deixnado o fundo translucido. 0 totalmente sem cor e 1 totalmente opaco com a cor*/
+    height:600px;
+    padding-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group p {
+    margin: 5px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+.form-group input {
+    
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    width: 400px;
+}
+
+.cadastro{
+    border: 3px solid;
+    border-color: #20064B;
+    border-radius: 50px;
+    border-bottom: 7px solid #20064B;
+    padding: 10px 20px;
+    margin-right: 50px;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.msg{
+    padding: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.518);
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(4, 121, 8);
+    background-color: rgb(124, 231, 124);
+    margin: 20px;
+    border-bottom: 7px solid rgba(255, 255, 255, 0.518);
+}
+
+.fundo_principal{
+
+    height: auto;
+    width: 950px;  /* Aumenta a largura do contêiner para acomodar mais conteúdo */
+    max-width: 90%;  /* Garante que o contêiner seja responsivo */
+    margin: 50px auto;  /* Centraliza e adiciona espaçamento vertical */
+    border-radius: 20px;
+    border: 5px dashed;
+    padding: 50px;  /* Mantém um padding consistente */
+    background-color: #f0f0f0;  /* Adiciona uma cor de fundo para destaque */
+    padding-top: 70px;
+    margin-bottom: 40px
+}
+
+.titulo_cadastrados{
+
+    font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 
+    1px 1px 0 #fff, 
+    2px 2px 0 #eee,
+    3px 3px 0 #ddd,
+    4px 4px 0 #ccc,
+    5px 5px 0 #bbb,
+    6px 6px 0 #aaa,
+    7px 7px 0 #999,
+    8px 8px 0 #888,
+    9px 9px 0 #777,
+    10px 10px 0 #666;
+
+}
+
+.fundo_do_registro{
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 1px;
+    border: 3px solid #ccc;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;  /* Adiciona flexbox para organizar o layout */
+    justify-content: space-between;  /* Espaça os itens */
+    align-items: center;  /* Alinha os itens ao centro */
+    margin: 20px;
+    flex: 0 0 auto;  /* Faz com que a imagem não cresça além de seu tamanho natural */
+    margin-left: 20px;  /* Espaçamento entre a imagem e a coluna de texto */
+}
+
+.campos_registros{
+    
+    display: flex;
+    flex-direction: column;  /* Alinha os itens verticalmente */
+    flex: 1;  /* Faz com que a coluna ocupe o máximo de espaço disponível */
+    margin-right: 20px;  /* Espaço entre os textos e a imagem */
+    
+}
+
+.image_icon{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width:200px;
+    height:200px;
+}
+
+

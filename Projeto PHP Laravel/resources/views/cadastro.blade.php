@@ -23,7 +23,7 @@
       
             <div class="form-group">
                 <p>Data de Nascimento:</p>
-                <input type="text" name="data_nascimento">
+                <input type="date" name="data_nascimento">
             </div>
         
             <div class="form-group">

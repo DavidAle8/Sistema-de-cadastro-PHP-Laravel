@@ -15,8 +15,8 @@ return new class extends Migration{
             
             $table->id();
             $table->string('Nome',100);
-            $table->string('cpf');
-            $table->string('data_nascimento');
+            $table->string('cpf',14);
+            $table->date('data_nascimento');
             $table->string('Email');
             $table->timestamps();
         });

@@ -40,4 +40,11 @@ class pessoa extends Controller{
 
     }
 
+    public function destroy($id){
+        
+        Cliente::findOrFail($id)->delete();
+
+        return redirect('/visualizar_cadastrados')->with('msg','Usuário deletado com sucesso!!');
+    }
+
 }

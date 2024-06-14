@@ -48,12 +48,12 @@ html, body {
     margin-top: 200px; /* Espaçamento superior opcional */
 }
 
-#visualizar,#cadastrar{
+#visualizar,#cadastrar,#deletar,.cadastro{
 
     border: 3px solid;
-    border-color: #20064B;
+    border-color: #000;
     border-radius: 50px;
-    border-bottom: 7px solid #20064B;
+    border-bottom: 7px solid #000;
     padding: 10px 20px;
     margin-right: 50px;
     transition: 0.5s;
@@ -153,17 +153,6 @@ h1{
     border: 1px solid #ccc;
     background-color: #efefef;
     width: 400px;
-}
-
-.cadastro{
-    border: 3px solid;
-    border-color: #20064B;
-    border-radius: 50px;
-    border-bottom: 7px solid #20064B;
-    padding: 10px 20px;
-    margin-right: 50px;
-    transition: 0.5s;
-    margin: 0;
 }
 
 .msg{

@@ -47,4 +47,18 @@ class pessoa extends Controller{
         return redirect('/visualizar_cadastrados')->with('msg','Usuário deletado com sucesso!!');
     }
 
+    public function atualizar($id){
+
+        $usuario = Cliente::findOrFail($id);
+
+        return view('atualizar', ['usuario' => $usuario]);
+    }
+
+    public function update(Request $request){
+
+        Cliente::findOrFail($request->id)->update($request->all());
+
+        return redirect('/visualizar_cadastrados')->with('msg','Usuário atualizado com sucesso!!');
+    }
+    
 }

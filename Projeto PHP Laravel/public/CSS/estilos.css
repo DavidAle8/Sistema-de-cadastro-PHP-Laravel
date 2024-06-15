@@ -15,12 +15,14 @@ body{
 
 }
 
+/*Layout do menu*/
+
 html, body {
+
     height: 100%;
     margin: 0;
     padding: 0;
 }
-
 
 .logo-link{
 
@@ -48,7 +50,7 @@ html, body {
     margin-top: 200px; /* Espaçamento superior opcional */
 }
 
-#visualizar,#cadastrar,#deletar,.cadastro{
+#visualizar,#cadastrar,#deletar,.cadastro,#atualizar{
 
     border: 3px solid;
     border-color: #000;
@@ -58,16 +60,40 @@ html, body {
     margin-right: 50px;
     transition: 0.5s;
     margin: 0;
-
+    padding-bottom: 10px;
 }
 
-#visualizar:hover, #cadastrar:hover, .cadastro:hover{
+#link_visualizar {
+    
+    display: inline-block; /* Faz com que o link ocupe apenas o espaço do botão */ /* Remove margens desnecessárias */
+    padding: 10px; 
+    margin: 0;/* Remove preenchimento desnecessário */
+    text-decoration: none; /* Remove o sublinhado do link */
+    vertical-align: top; /* Alinha verticalmente com o botão deletar */
+}
 
-    transform: scale(1.1);  
+    #atualizar{
+        margin-top: 10px;
+    }
+
+    #deletar{
+
+        margin: 100;
+        padding: 10px;
+    }
+
+#visualizar:hover, 
+#cadastrar:hover, 
+.cadastro:hover, 
+#atualizar:hover,
+#deletar:hover{
+
+    transform: scale(1.1); /* mudando a escala, dá para ele ou crescer ou encolher qd passar o mouse. Ex: transform: scale(0.9); */
     color:#A61EA6;
 }
 
 #texto{ 
+    
     text-align: center;
     margin-bottom: 10px;
     font-size: 20px;
@@ -110,16 +136,19 @@ h1{
     10px 10px 0 #666;
 }
 
+/*Layout do menu*/
 
 /*Parte do cadastro*/
 
 .form-container {
+    
     display: flex; /*display: flex; - Torna a div um contêiner flexível.*/
     flex-direction: column; /*flex-direction: column; - Organiza os filhos em uma coluna.*/
     align-items: center; /* align-items: center; - Centraliza os filhos horizontalmente.*/
     justify-content: center; /*justify-content: center; - Centraliza os filhos verticalmente.*/
     min-height: 10vh; /*min-height: 100vh; - Garante que o contêiner ocupe pelo menos a altura total da viewport.*/
     padding-top: 35px;
+    
 }
 
 .formulario {
@@ -132,7 +161,6 @@ h1{
     align-items: center;
     width: 500px;
     background-color: rgba(255, 255, 255, 0.8);/* Esse '0.8' é o que ta deixnado o fundo translucido. 0 totalmente sem cor e 1 totalmente opaco com a cor*/
-    height:600px;
     padding-top: 20px;
 }
 
@@ -155,16 +183,23 @@ h1{
     width: 400px;
 }
 
+/*Parte do cadastro*/
+
+/*Layout de visualizar cadastrados*/
+    
 .msg{
+    
     padding: 30px;
     border: 3px solid rgba(255, 255, 255, 0.518);
-    border-radius: 50px;
+    border-radius: 5px;
     text-align: center;
     color: rgb(4, 121, 8);
     background-color: rgb(124, 231, 124);
     margin: 20px;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.518);
+    
 }
+
+
 
 .fundo_principal{
 
@@ -230,6 +265,7 @@ h1{
 }
 
 .image_icon{
+
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -237,4 +273,10 @@ h1{
     height:200px;
 }
 
+/*Layout de visualizar cadastrados*/
 
+.icon{
+
+    font-size: 15px;
+    margin-left: 1px;
+}

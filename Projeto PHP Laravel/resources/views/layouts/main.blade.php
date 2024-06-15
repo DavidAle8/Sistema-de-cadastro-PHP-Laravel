@@ -28,9 +28,9 @@
 
         <!-- Google Fonts\-->
 
-        <!-- CSS Bootstrap-->
+        <!-- /CSS Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- CSS Bootstrap-->
+        <!-- CSS Bootstrap\-->
 
     </head>
 
@@ -65,10 +65,11 @@
             </footer>
         </div>
         
-        <!-- Ionicons-->
+        <!-- Ion-icons-->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- Ionicons-->
+        <!-- Ion-icons-->
+
     </body>
 
 </html>

@@ -12,6 +12,8 @@ Route::get('/cadastro', [pessoa::class, 'cadastrar']);
 Route::post('/insert_client', [pessoa::class, 'insert']);
 Route::get('/visualizar_cadastrados', [pessoa::class, 'visualizar']);
 Route::delete('/visualizar_cadastrados/{id}',[pessoa::class, 'destroy']);
+Route::get('/atualizar/{id}',[pessoa::class,'atualizar']);
+Route::put('/update/{id}',[pessoa::class, 'update']);
 
 //http://127.0.0.1:8000
 //C:\Users\aless\OneDrive\Documentos\Meus códigos\PHP projeto\Projeto
